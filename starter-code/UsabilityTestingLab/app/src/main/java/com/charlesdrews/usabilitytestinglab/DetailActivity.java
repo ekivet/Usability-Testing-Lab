@@ -25,6 +25,12 @@ public class DetailActivity extends AppCompatActivity {
 
             //TODO rather than launch the link externally in the broswer, launch in the detail fragment's webview
             //TODO - (hint: you'll need to get a reference to the detail fragment that's loaded in this activity)
+
+            mDetailFragment = (DetailFragment) getSupportFragmentManager().findFragmentById(R.id.detail_fragment);
+            mDetailFragment.updateWebView(selectedSign);
+
+
+
         }
     }
 }

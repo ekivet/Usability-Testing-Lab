@@ -51,5 +51,6 @@ public class DetailFragment extends Fragment {
 
     public void updateWebView(String selectedSign) {
         //TODO - look up how to load a URL in a webview
+        mWebView.loadUrl(URL_BEGINNING+selectedSign);
     }
 }
